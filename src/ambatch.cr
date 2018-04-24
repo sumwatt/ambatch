@@ -40,8 +40,8 @@ module Ambatch
           puts parser
           exit 0
         end
-        parser.on "-v", "--version", "0.1.0" do
-          puts parser
+        parser.on "-v", "--version", VERSION do
+          puts VERSION
           exit 0
         end
       end
