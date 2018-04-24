@@ -6,13 +6,11 @@ require "yaml"
 # results to the command line. Useful for projects where you want to mock up
 # a structure without commiting to use the generators ahead of time.
 module Ambatch
-
   class Parser
-
     def self.run
       OptionParser.parse! do |parser|
         parser.banner = "Usage: ambatch -f /path/to/file.yml"
-        parser.on "-f PATH", "--file PATH", "Path to a file" do | path |
+        parser.on "-f PATH", "--file PATH", "Path to a file" do |path|
           # TODO clean this parsing up
           begin
             data = YAML.parse(File.read path)
@@ -31,7 +29,7 @@ module Ambatch
               end
             end
 
-          # TODO it would be helpful to know the types of erros this creates...
+            # TODO it would be helpful to know the types of erros this creates...
           rescue YAML::ParseException
             raise "Could not parse file"
           rescue ex
