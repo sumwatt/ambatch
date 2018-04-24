@@ -14,6 +14,7 @@ You must have `crystal` cli installed prior.
 
 The parsed Yaml file is iterated over. On the outside, you have the generator you want to invoke, followed by the `name` containing an array of string values. This is parsed down into strings which are passed to the command line via `system`
 
+**This works for Model, Controller, Scaffold**
 
 Create a Yaml file similar to:
 
