@@ -1,0 +1,16 @@
+name: ambatch
+version: 0.1.0
+
+authors:
+  - colson <colson@cogfactory.net>
+
+targets:
+  ambatch:
+    main: src/ambatch.cr
+
+executables:
+  - ambatch
+
+crystal: 0.24.2
+
+license: MIT
