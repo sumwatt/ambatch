@@ -8,7 +8,30 @@ more time writing up a parser for a YAML file.
 
 ## Installation
 
-You must have `crystal` cli installed prior.
+You must have `crystal` and `amber` cli installed prior.
+
+Clone it:
+```
+git clone https://github.com/sumwatt/ambatch.git
+```
+Change to it:
+```
+cd ambatch
+```
+Build it:
+```
+crystal build src/ambatch.cr --release
+```
+This will create an executable in the root directory.
+
+Move it to somewhere within your $PATH:
+```
+$(which crystal)/ambatch
+```
+
+Someday I'll fix it so the last step isn't necessary
+
+
 
 ## Usage
 
