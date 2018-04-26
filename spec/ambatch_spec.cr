@@ -18,7 +18,7 @@ describe Ambatch do
     it "should throw an exception if the file does not have .yml extension" do
       path = "spec/support/fake.txt"
       expect_raises(Exception) do
-        raise YAML::Exception if !Ambatch::Parser.parse_yaml(path)
+        Ambatch::Parser.parse_yaml(path)
       end
     end
   end
