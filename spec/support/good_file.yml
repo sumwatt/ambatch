@@ -1,0 +1,12 @@
+Model:
+  Post:
+    - "title:string"
+    - "body:string"
+    - "user:reference"
+  User:
+    - "name:string"
+    - "password:string"
+  Comment:
+    - "title:string"
+    - "body:text"
+    - "user:reference"
